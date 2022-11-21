@@ -9,31 +9,31 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int DecToBin(int num)
 {
-   int binNumber=0;
-   int d10=1;
-   while (num>0)
-   {
-    binNumber = binNumber+ num % 2 * d10;
-    num/=2;
-    d10*=10;
-   }
-   return binNumber;
+    int binNumber = 0;
+    int d10 = 1;
+    while (num > 0)
+    {
+        binNumber = binNumber + num % 2 * d10;
+        num /= 2;
+        d10 *= 10;
+    }
+    return binNumber;
 }
 
 int ReverseNum(int num)
 {
-    int count=0;
-    int res= 0;
-    while (num>0)
+    int count = 0;
+    int res = 0;
+    while (num > 0)
     {
-        count= number%10;
-        res= res*10+count;
-        num/=10;
+        count = number % 10;
+        res = res * 10 + count;
+        num /= 10;
     }
     return res;
 }
 
-string decToBin = DecToBin(number);
+int decToBin = DecToBin(number);
 
 Console.WriteLine(decToBin);
 
