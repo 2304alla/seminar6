@@ -4,7 +4,7 @@
 // Если N = 3 -> 0 1 1
 // Если N = 7 -> 0 1 1 2 3 5 8
 
-int Fibonachi(int number)
+int[] Fibonachi(int number)
 {
     int[] array = new int[number];
     array[1] = 1;

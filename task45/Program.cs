@@ -24,7 +24,7 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-int CopyArray(int[] array)
+int[] CopyArray(int[] array)
 {
     int[] copyArray = new int[array.Length];
     for (int i = 0; i < array.Length; i++)
